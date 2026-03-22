@@ -1,0 +1,12 @@
+// File: lib/ui/main_app/screens/settings/settings_screen.dart
+import 'package:flutter/material.dart';
+
+class SettingsScreen extends StatelessWidget {
+  const SettingsScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: Implement settings screen
+    return const SizedBox();
+  }
+}

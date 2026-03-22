@@ -1,0 +1,40 @@
+<parameter name="content">import 'package:flutter/material.dart';
+import 'package:volt_ai_q/core/constants/app_colors.dart';
+import 'package:volt_ai_q/core/themes/text_styles.dart';
+import 'package:volt_ai_q/ui/widgets/glass_card.dart';
+
+class CTASection extends StatelessWidget {
+  const CTASection({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(60),
+      child: const GlassCard(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              'Ready to transform your energy usage?',
+              style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+              textAlign: TextAlign.center,
+            ),
+            SizedBox(height: 24),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: appColors.primary,
+                  padding: EdgeInsets.symmetric(vertical: 16),
+                ),
+                onPressed: null, // TODO: Add onPressed
+                child: Text('Get Started Free', style: TextStyle(fontSize: 18)),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+</parameter>
